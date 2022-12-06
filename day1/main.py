@@ -1,7 +1,7 @@
 input = open("data.txt", "r")
 calories: str = input.read()
-calories = calories.split("\n\n")
-calories = [i.split("\n") for i in calories]
+calories = calories.split("\n\n")  # type: ignore
+calories = [i.split("\n") for i in calories]  # type: ignore
 
 # convert string list to int list
 cal = [list(map(int, groupOfCalorie)) for groupOfCalorie in calories]
