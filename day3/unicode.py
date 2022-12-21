@@ -10,3 +10,5 @@ while True:
             return unicode - 96
 
     print(getPriority(letter))
+
+print()
